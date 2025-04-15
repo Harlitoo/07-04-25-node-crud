@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CRUD de telas</title>
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="shortcut icon" href="./banana.png" />
+  <link rel="stylesheet" href="./fontawesome-free-6.7.2-web/css/all.min.css" />
+  <style>
+    body {
+      width: 100%;
+      min-height: 100vh;
+      margin: 0;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-image: url('https://i.redd.it/nq9bsci7lyr81.gif');
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      backdrop-filter: brightness(0.8);
+    }
+
+    form,
+    .btn-container {
+      background: rgba(255, 255, 255, 0.85);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+      margin-bottom: 10px;
+    }
+
+    label i {
+      margin-right: 8px;
+      color: #007bff;
+    }
+
+    .btn-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+
+<body>
+  <form id="frmCadastro">
+    <label for="txtNome"><i class="fas fa-user"></i>Digite o Nome</label>
+    <input type="text" id="txtNome" class="form-control" /><br />
+
+    <label for="txtLogin"><i class="fas fa-user-circle"></i>Digite o Login</label>
+    <input type="text" id="txtLogin" class="form-control" /><br />
+
+    <label for="txtSenha"><i class="fas fa-lock"></i>Digite a Senha</label>
+    <input type="password" id="txtSenha" class="form-control" /><br />
+
+    <div class="text-center">
+      <input type="submit" class="btn btn-primary" value="Cadastrar" />
+    </div>
+  </form>
+
+  <div class="btn-container">
+    <a class="btn btn-primary" href="./login.html" target="_blank">Login</a>
+    <a class="btn btn-primary" href="./cadastro.html" target="_blank">Cadastro</a>
+    <a class="btn btn-primary" href="./leitura.html" target="_blank">Leitura</a>
+    <a class="btn btn-primary" href="./atualizacao.html" target="_blank">Atualização</a>
+    <a class="btn btn-primary" href="./remocao.html" target="_blank">Remoção</a>
+  </div>
+
+  <script src="./index.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="./fontawesome-free-6.7.2-web/js/all.min.js"></script>
+</body>
+
+</html>
